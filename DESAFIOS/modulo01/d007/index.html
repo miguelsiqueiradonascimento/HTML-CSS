@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? experimente ampliar o tamanho da sua Janela para aproveitar a melhor experiencia &#x1FAE8;</p>
+    
+    <picture>
+        <source media="(max-width: 800px)" srcset="imagens/imagem-p.jpg" type="image/jpeg">
+        <source media="(max-width: 1320px)" srcset="imagens/imagem-m.jpg" type="image/jpeg">
+        <img src="imagens/imagem-g.jpg" alt="museu">
+    </picture>
+
+</body>
+</html>
