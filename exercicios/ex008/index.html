@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style> 
+        strong{
+            color: rgb(255, 0, 0);
+        }
+    </style> <!-- aqui em sima eu estu criando um parametro aonde todos os style do meu código teram que utilzar a coloração vermelha-->
+</head>
+<body>
+    <h1>Principais fomatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <!--maneira não semantica de utilizar essas tags de formatação-->
+    <p>Nessa frase temos um <b>termo em negrito </b> a tag B (não semantica)</p>
+    <!--maneira semantica da tag-->
+    <p>Nessa frase temos um <strong>termo em negrito</strong> </p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p> nessa tag, temos um <i>termo em itálico</i> usando a tag I (não sematica)</p>
+    <!--maneira semantica da tag-->
+    <p>nessa frase temos um tag em destaque utilizando a tag EM, <em>colocando um termo em italico</em> (semantico)</p>
+
+    <h2>Texto marcado</h2>
+    <p>podemos criar também <mark style="background-color: rgb(6, 70, 70)"> um texto marcado </mark> usando a tag MARK.</p> <!--para mudar a cor do marca texto, não é HTML mas sim CSS, mas podemos utilizar na maioria das vezes juntamente na tag de abertura, outra um parametro chamdo style que justamento alterara o estilo da tag e utilzar o qual parametro que eu desejo usar no caso da tag mark o parametro é background-color -->
+
+    <h2>Texto Grande e Pequeno</h2>
+    <p> Estamos criando um texto <big> Texto grande</big> e <small>texto pequeno</small></p> <!--a tag big ficou obsoleta, a small funciona normalmente -->
+
+    <h2>Texto deletado</h2>
+    <p>podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado. </p>
+
+    <h2>Texto inserido</h2>
+    <p>podemos marcar <ins>um texto com inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois</p>
+    <p>ou também podemos usar a tag <u> "U" para sublinhar algum texto</u> mas essa não é mais recomenado, pois está obsoleta </p>
+    
+    <h2>Texto sobrescrito</h2>
+    <p>para inserir coisas do tipo X <sup> 20</sup>+3</p>
+    
+    <h2>Texto subscrito</h2>
+    <p>para inserir coisas do tipo H <sub>2</sub>0</p>
+    
+
+</body>
+</html>

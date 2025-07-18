@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caixa</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid; /*esse elemento defino o estilo da borda se será pontilhada, trassejada, solida etc...*/
+            border-color: darkslategray;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*margin segue o mesmo padrão do pedding para o shorthand*/
+            margin: auto; /*serve para centralizar a margin*/
+            margin-bottom: 30px;
+            
+
+            /*shorthand do outline*/
+            outline: 5px dashed salmon; /*outilene é uma linha após a borda, e eu posso definir as mesmas propriedades, style, width, color etc...*/
+
+            
+            
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            /*shorthand do padding, sentido horário começando pelo pedding-top*/
+
+            padding: 10px 10px 10px 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--todas as informações foram formatadas previamente em um estilo CSS padrão do navegador (user agent)-->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafo também são emxemplos de caixa box-level, mas os <a href="#"> links são exemplos de caixas inline-level</a> Vamos ver como isso funciona</p>
+</body>
+</html>

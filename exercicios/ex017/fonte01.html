@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medida Absolutas 
+            cm, mm, in(polegada), px, pt(ponto), pc(paica)
+            
+            Medidas relativas
+            em(tamanho da fonte), ex(tamanho x de uma fonte), rem(parecido com o em mas com o root do body), vw(largura da view port-tamanho da tela), vh(altura da view port), %
+            */
+
+            /*recomendação da W3C é usar as medidas px (absoluta) e a medida em(relativa )*/ 
+            
+            
+
+        }
+        h1{
+            /*vimos que temos varios atributos de fontes que fazem cada um uma coisa se eu quiser juntalos posso também*/ 
+            /*como fazer um shorthand de font:
+            deve se seguir essa sequncia para funcionar
+            
+            font-style -> font-weight -> font-size -> font-family*/
+
+            font: italic bolder 3em verdana;
+        }
+        
+        h2{
+            font-size: 16px; /*geralmente 16px é o tamanha padrão da fonte; e 16px = 1em*/
+            
+            font-weight: bold; /*espessura(peso) da fonte*/
+            /*temos alguns tipos de pesos
+            lighter, normal, bold, bolder 
+            do menos espesso para a o mais espesso*/
+            /*nem toda fonte tem os quatro tipos de peso*/ 
+
+            font-style: italic;/*serve para eu definir o estilo da fonte, como italico, mono espaçada etc..*/ 
+
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam tempora ea illum suscipit quam nam. Magni modi praesentium nostrum amet sit, exercitationem beatae animi debitis perferendis libero, optio repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae sunt, itaque ea, maiores voluptates deserunt voluptatum culpa quisquam ullam ab distinctio error iure cumque placeat praesentium voluptate sapiente illo.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium repellendus quas pariatur aut placeat aspernatur velit mollitia, debitis sed. Dolorem quas a accusamus ad unde ea hic nulla voluptates eos.</p>
+    <h2>Subititulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quas ullam ex placeat quis sint, aliquid porro pariatur, voluptatum id veniam omnis laudantium alias obcaecati! Soluta ducimus ratione tempore non.</p>
+    
+
+
+</body>
+</html>

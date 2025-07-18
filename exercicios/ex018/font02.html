@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomtes externas</title>
+    <!--para colocar fontes fazendo o download da mesma na sua máquina deve:
+    instalar o arquivo no google fontes e pesquisar pelos formatos de fonte abaixo-->
+    <style>
+        @font-face{
+            font-family: 'Honk'; /*serve para nomear a fonte face o qual está instalada na sua máquina*/
+            src: url('fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype'); /*src serve para demontrar a origem do arquvio com base na url do arquivo instalado; e o format serve para informar o typo do arquivo*/
+            font-weight: normal;
+            font-style: normal;
+            /*
+            tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (apple advanced Typography)
+            - svg*/
+        }
+        @font-face{
+            font-family: 'AreYouSerious';
+            src: url('fonts/AreYouSerious-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: "AreYouSerious";
+            color: black;
+        }
+
+        h1{
+            font-family: "Honk", Arial;
+            
+        }
+    </style>
+
+</head>
+    
+<body>
+     <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ex veritatis tempore similique, voluptatum numquam eaque, aspernatur molestiae explicabo adipisci deserunt! Laborum doloribus suscipit doloremque natus temporibus impedit quam provident.
+    </p>
+</body>
+</html>

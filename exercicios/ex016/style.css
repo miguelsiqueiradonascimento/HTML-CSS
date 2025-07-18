@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+  
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+body{
+    background-image: linear-gradient(to bottom, #508BBF, #3F6CA6, #273e5c);
+}
+/* a tag <main> é utilizada para definir o conteúdo principal de um documento ou aplicação, representando a área central da página que está diretamente relacionada ao tema principal do conteúdo*/
+main{
+    background-color: white;
+    width: 600px; /* o propriedade width(largura) serve para definir a largura que meu conteudo vai ocupar, nesse caso definindo a largura de ocupação do main */
+    padding: 10px /* o propriedade padding serve para definir um preenchimento ou acochuamento a mais internamente entre o conteúdo de um elemento e sua borda */; 
+    margin: auto; /*serve para definir a marge, o espaço externo ao redor de um elemento*/ 
+    border-radius: 20px; /*serve para arredondar a borda do elemento*/ 
+    box-shadow: 5px 5px 15px #111c26b2; /* serve para adicionar sombra ao meu elemento caixa, no caso o main, sendo representado pelo largura da sombra, tamnho da sombra e o quanto a mesma vai se espalhar*/
+}
+
+h2{
+   color: #111C26; 
+}
+
+h1{
+    color: #1f5235;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0c2015e7
+}
+
+p{
+    text-align: justify;
+}

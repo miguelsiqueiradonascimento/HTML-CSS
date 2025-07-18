@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, rgba(0, 167, 167, 0.493), rgba(93, 172, 172, 0.493), rgba(209, 233, 233, 0.692));
+            height: 100vw;
+
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred; /*essa pseu do classe faz com que o elemento mude ao ser visitado, geralmente usado para links*/
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a:active{ /*active é uma pseudo classe que realiza a mudança descreta quando clica no elemento*/
+            color: aqua;
+        }
+        /*pseudo-elementos*/
+        /*usado para inserir algo diretamente no CSS sem precisar sitar no HTML*/
+        a#especial::after{ /*serve para adicionar algo após a tag e os pseudo-classe*/
+            content: '[link]'; /*sere para inserir um conteudo*/
+            color: blanchedalmond;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        a#especial::before{
+           content: '[link]'; /*sere para inserir um conteudo*/
+            color: rgb(153, 255, 161);
+            font-weight: normal;
+            text-decoration: none; 
+        }
+        div{
+            height: 300px;
+            width: 500px;
+            background-color: aliceblue;
+            box-shadow: 2px 2px 15px;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+        h1{
+            text-align: center;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Personalisando links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io">Repositorio Github</a></li>
+            <li><a href="https://youtube.com/cursoemvideo" id="especial">Canal do YouTube</a></li>
+            <li><a href="https://www.cursoemvideo.com">Site do Cursoemvideo</a></li>
+        </ul>
+    </div>
+</body>
+</html>

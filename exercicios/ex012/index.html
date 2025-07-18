@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <h2>Esse vídeo está hospedado no meu próprio servidor</h2>
+    <video src="midia/meu-video.mp4" width="560" height="315" poster="imagens/urez.png"  controls loop></video>
+
+    <p>obs:<mark style="background-color: aquamarine;">O autoplay funciona com vídeos desde que estaja acompanhado do atributo muted</mark></p>
+    <!--para se colocar um vídeo segue a mesma ideia de um áudio e imagen, coloca-se a tag <video> src se coloca o arquivo no qual deseja exibir o vídeo, -->
+
+    <!--se eu quiser que o vídeo se reproduza automaticamente basta eu usar o atributo autoplay seguido do atributo muted-->    
+    
+    <!--Apenas com a tag video não ira funcionar, para isso preciso do atributo controls-->
+    
+    <!--O atributo poster serve para eu tem uma foto antes do vídeo ser reprodusido-->
+
+    <!--O atributo width serve para limitar o tamanho do vídeo com base na sua largura-->
+
+    <h1>Vídeos hospedados externamente</h1>
+    <h2>Esse vídeo está hospedado nos serves do YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EYdEEkY-iQc?si=dw4Fsv-7ZgbgtSAh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h2>Esse vídeo está hospedado nos serves do Vímeo</h2>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/883633345?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;" width="560" height="315" title="Sukuna vs Jogo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

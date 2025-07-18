@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositorio público no Github</a></p> 
+    <!--nesse link pode ver que é aberta uma nova janela independente para a informação do meu link -->
+    
+    <!--o comando target- é usado para especificar onde o documento vinculado será aberto, já _blank é o valor suportado pelo comando target que é justamente para abrir link em uma nova janela-->
+   
+    <!--O atributo rel em HTML define o relacionamento entre o documento atual e um recurso vinculado, no caso do valor "external" significa que esse link é externo fora da minha pagina principal, esse atributo é utilizado pelo mecanismos de buscas.-->
+    
+
+    <p>Você também pode acessar uma <a href="https://www.youtube.com/watch?v=OuiTHMuvqT4&list=RDOuiTHMuvqT4&start_radio=1">música do youtube</a></p>
+    <!-- sem esses atributos target e rel o link abre na mesma aba-->
+
+    <h1>Usando link internos</h1>
+    <p>Esta é a primeeira página do site. Se você quiser, pode acessar a minha <a href="pag002.html" rel="next">segunda página</a> </p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html">página de noticias</a></p>
+
+    <h1>Links para o download</h1>
+    <ul>
+        <li><a href="livro/3is96dr3kb27mhirroqj76fb7lzc3j.pdf" download="3is96dr3kb27mhirroqj76fb7lzc3j.pdf" type="texto/html">baixe o livro em PDF</a></li>
+        <!--o comando download serve para que assim que se clica no link seja baixado o arquivo altomaticamente, portanto se coloca o comando e o tipo de valor que o mesmo ira recever que no caso é aonde está o arquivo-->
+
+        <!--o comando type serve para justamente ijnformar qual o tipo de arquivo baixado, se é html, pdf xls etc..., para mim saber essa informação basta pesquisar no site iana.org  por tipos de mídia ou média type -->
+
+        <p><del>Apenas para não ficar confuso o link direto no PDF não foi baixado automáticamente, pois o buscador do google está reconhecendo o arquivo de imediato como PDF e exibindo na tela</del></p>
+
+        <p>para pesquisar o tipo de arquivo que deve ser baixado deve olhar em <mark style="background-color: aquamarine;">iana.org</mark ></p>
+
+        <li><a href="livro/3is96dr3kb27mhirroqj76fb7lzc3j.zip" download="3is96dr3kb27mhirroqj76fb7lzc3j.zip" type="application/zip"> Livro compactado em ZIP</a></li>
+    </ul>
+
+
+    
+</body>
+</html>

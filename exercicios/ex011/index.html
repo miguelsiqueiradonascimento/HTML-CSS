@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens dimanâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamaho do seu navegador.</p>
+
+    <p><mark style="background-color: aquamarine;">Observação não contida no vídeo</mark></p>
+
+    <p style="color: brown;"> o atributo autoplay não funciona com áudio no chrome, por ter sido desabilitado pelo próprio navegador</p>
+
+    <p> quer saber mais pode verificar no <a href="https://pt.stackoverflow.com/questions/445378/o-atributo-autoplay-n%C3%A3o-inicia-o-%C3%A1udio-por-qu%C3%AA">link</a> ou pode verificar também direto no blog do google, pelo <a href="https://developer.chrome.com/blog/autoplay?hl=pt-br">link</a> </p>
+
+    <picture> <!-- A tag <picture> é usada para fornecer várias versões de uma imagem permitindo que o navegador escolha a melhor opção com base em características como tamanho da tela, resolução ou tipo de mídia-->
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--obs. max width utiliza como base a largura da tela -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- esse atributo source media type,faz com que a imagem se adapte ao tamanho da tela recebendo valores max ou min-->
+        <!--com a media recebendo o valor max ou min para que a imagem seja suportada por aquele tamanho-->
+        <!--srcset recebendo uma emagem substituta caso aquele valor máximo ou min seja violado-->
+        <!--type sendo o tipo de arquivo que está sendo trabalhado-->
+        
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!--A tag img é usada para definir a foto base para os atributos fazerem a modificação-->
+    </picture>
+    
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio controls
+    src="midia/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+    <!--a tag audio como a tag img funciona da mesma forma barta colocar o arquivo no atributo src-->
+    <!--compatibilidade de áudios com todos navegadores precisa MP3 WAV OGG -->
+</body>
+</html>

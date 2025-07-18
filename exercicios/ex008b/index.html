@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em liguagem JavaScript.</p> faz com que todas as minhas letras tem o mesmo espaçamento
+    <pre>  
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR' )
+            else
+                print(f'o número {num} é ÍMPAR')
+            print('Fim do Programa')
+        </code>
+    </pre> <!--observe que o tag code não identa o código, para deixar da forma escrita usamos a tag pre--> 
+    <!-- para mim trazer todo um bloco da mesma maneira para esqueda podemos usar as teclas shift+tab-->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro rápido</q></p> <!--podemos escrever as aspas direto mas é mais técnico quando falamos de sentido utilizar a tag q para sitações-->
+<!-- A tag q não faz quebra de páginas nas sitações em bloco para isso temos a tag <blockquote>-->
+    <p>como disse o autor fulano 
+        <blockquote cite="https://www.google.com.br/books/edition/_/LLmxDAEACAAJ?hl=pt-BR&sa=X&ved=2ahUKEwi3ifHe19mIAxVquJUCHcmMJDYQ7_IDegQIEBAC"> 
+        Bk. I. Creating the XHTML Foundation -- Ch. 1. Sound HTML Foundations -- Ch. 2. It's All about Validation -- Ch. 3. Choosing Your Tools -- Ch. 4. Managing Information with Lists and Tables -- Ch. 5. Making Connections with Links -- Ch. 6. Adding Images -- Ch. 7. Creating Forms -- Bk. II. Styling With CSS -- Ch. 1. Coloring Your World -- Ch. 2. Styling Text -- Ch. 3. Selectors, Class, and Style -- Ch. 4. Borders and Backgrounds -- Ch. 5. Levels of CSS -- Bk. III. Using Positional CSS for Layout -- Ch. 1. Fun with the Fabulous Float -- Ch. 2. Building Floating Page Layouts -- Ch. 3. Styling Lists and Menus -- Ch. 4. Using Alternative Positioning -- Bk. IV. 
+        </blockquote><!--ainda no blockquote podemos colocar um parametro, que geralmente é o link da página da onde que você tirou essa informação, isso não altera a pagina visualmente, mas faz com que os mecanismos de busca recomende o autor do conteudo-->
+    </p>
+    <h2>Abreviações </h2>
+    <p>estou estudando <abbr title="Hyper Text Markup">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando </p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl"> estamos aprendendo varias coisas em HTML</bdo></p>
+
+</body>
+</html>

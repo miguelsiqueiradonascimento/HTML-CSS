@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houver</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* essa pseudo classe está informando para uma ação ocorrer com a tributo que está dentro da div*/
+        div > p{
+            display: none; /*diplay para definir como um elemento HTML deve ser renderizado e como ele interage com outros elementos na página, no caso none ele é inexistente não aparece*/
+        }
+        div:hover > p{
+            color: white;
+            display: block;
+            background-color: red;
+            width: 300px;
+        }
+        
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+    
+</body>
+</html>
